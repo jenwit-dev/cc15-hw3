@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            /* border: 4px solid red; */
+            margin: 0;
+            min-height: 100vh;
+        }
+
+        /* header {
+            border: 4px solid green;
+        } */
+
+        nav {
+            /* border: 4px solid blue ; */
+            display: flex;
+            justify-content: flex-end;
+            gap: 1rem;
+            padding-right: 2rem;
+        }
+
+        nav>a {
+            text-decoration: none;
+            color: black;
+            font-weight: 500;
+        }
+
+        nav>a:hover {
+            color: red;
+        }
+
+        main {
+            /* border: 4px solid green; */
+            /* flex-grow: 0;
+            flex-shrink: 0; */
+            /* width: 767px;   */
+
+            /* max-width: 767px;
+            min-width: 767px; */
+            margin-top: 4rem;
+            margin-bottom: 6rem;
+
+        }
+
+        .main__block1 {
+            /* border: 4px solid blue; */
+            display: flex;
+            justify-content: center;
+            gap: 51px;
+            margin-bottom: 3rem;
+        }
+
+        .main__block1-1 {
+            /* border: 4px solid lime; */
+            width: fit-content;
+        }
+
+        /* .main__block1-1>h1 {
+            border: 4px solid deeppink;
+        } */
+
+        .main__block1-1>p {
+            /* border: 4px solid deeppink; */
+            max-width: 551px;
+            min-width: 551px;
+            margin-bottom: 21.44px;
+        }
+
+        .myButton {
+            background-color: #ff5252;
+            display: inline-block;
+            cursor: pointer;
+            color: #ffffff;
+            font-family: Arial;
+            font-size: 16px;
+            padding: 11px 17px;
+            text-decoration: none;
+            text-shadow: 0px 1px 0px #2f6627;
+            border: 0px;
+        }
+
+        .myButton:hover {
+            background-color: #5cbf2a;
+        }
+
+        .myButton:active {
+            position: relative;
+            top: 1px;
+        }
+
+        .main__block1-2 {
+            /* border: 4px solid lime; */
+            width: 200px;
+            height: 200px;
+            max-width: 192px;
+            min-width: 192px;
+        }
+
+        .profile {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .main__block2 {
+            /* border: 4px solid blue; */
+            background-color: rgb(220, 246, 255);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            padding-bottom: 2rem;
+        }
+
+        .frame_block2 {
+            /* border: 4px solid purple; */
+            width: 820px;
+            margin-top: 0px;
+        }
+
+        .headers {
+            /* border: 4px solid lime; */
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .recent {
+            font-size: 20px;
+            /* border: 4px solid aqua; */
+
+        }
+
+        .view {
+            font-size: 16px;
+            color: rgb(4, 164, 189);
+            /* border: 4px solid aqua; */
+
+        }
+
+        .frame_block2-1_block2-2 {
+            /* border: 4px solid lime; */
+            display: flex;
+            gap: 1rem;
+            margin: 0;
+
+        }
+
+        .main__block2-1 {
+            /* border: 4px solid deeppink; */
+            background-color: white;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+
+        .main__block2-1>h1 {
+           font-size: 24px;
+        }
+
+        .main__block2-1>h2 {
+            font-size: 16px;
+            font-weight: 400;
+        }
+
+        /* .main__block2-1e>p {
+            min-width: 377px;
+            max-width: 377px;
+        } */
+
+        .main__block2-2 {
+            /* border: 4px solid deeppink; */
+            background-color: white;
+            padding-left: 1rem;
+            padding-right: 1rem;
+        }
+
+
+        .main__block2-2>h1 {
+            font-size: 24px;
+        }
+
+        .main__block2-2>h2 {
+            font-size: 16px;
+            font-weight: 400;
+        }
+
+        /* .main__block2-2>p {
+
+        } */
+
+        /* .main__block3 { 
+            border: 4px solid blue;
+        } */
+
+        .main__block3__content {
+            width: 802px;
+            /* border: 4px solid lime; */
+            margin: auto;
+        }
+
+        .feature {
+            /* border: 4px solid deeppink; */
+            font-size: 20px;
+            margin: 1rem 0rem;
+        }
+
+
+        .main__block3__content__article1 {
+            /* border: 4px solid deeppink; */
+            display: flex;
+        }
+
+        /* .main__block3__content__article1__pic {
+            border: 4px solid aqua;
+        } */
+
+        .main__block3__content__article1__pic>img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+
+        .main__block3__content__article1__text {
+            /* border: 4px solid aqua; */
+            padding-left: 1rem;
+        }
+
+        .main__block3__content__article1__text>h1 {
+            font-size: 24px;
+            margin-top: 0;
+        }
+
+        .main__block3__content__article1__text>p {
+            /* border: 4px solid red; */
+            margin-bottom: 0;
+        }
+
+
+        .main__block3__content__article2 {
+            /* border: 4px solid deeppink; */
+            display: flex;
+        }
+
+        /* .main__block3__content__article2__pic { 
+            border: 4px solid aqua;
+        } */ 
+
+        .main__block3__content__article2__pic>img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+
+        .main__block3__content__article2__text {
+            /* border: 4px solid aqua; */
+            padding-left: 1rem;
+        }
+
+        .main__block3__content__article2__text>h1 {
+            font-size: 24px;
+            margin-top: 0;
+        }
+
+        .main__block3__content__article2__text>p {
+            /* border: 4px solid red; */
+            margin-bottom: 0;
+        }
+
+        .main__block3__content__article3 {
+            /* border: 4px solid deeppink; */
+            display: flex;
+        }
+
+        /* .main__block3__content__article3__pic {
+            border: 4px solid aqua;
+        } */
+
+        .main__block3__content__article3__pic>img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+
+        .main__block3__content__article3__text {
+            /* border: 4px solid aqua; */
+            padding-left: 1rem;
+        }
+
+        .main__block3__content__article3__text>h1 {
+            font-size: 24px;
+            margin-top: 0;
+        }
+
+        .main__block3__content__article3__text>p {
+            /* border: 4px solid red; */
+            margin-bottom: 0;
+        }
+
+        .year-tag {
+            /* border: 4px solid red; */
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .year {
+            /* border: 4px solid green; */
+            background-color: black;
+            color: white;
+            padding: 4px;
+            border-radius: 12px;
+            width: 50px;
+            text-align: center;
+        }
+
+        .tag {
+            /* border: 4px solid green; */
+            color: gray;
+            margin-top: 3px;
+        }
+
+        .line {
+            border-top: 1px solid gray;
+            margin-top: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        footer {
+            /* border: 4px solid green; */
+            margin-bottom: 2rem;
+        }
+
+        .social {
+            display: flex;
+            justify-content: center;
+            gap: 2.5rem;
+        }
+
+        .social>a {
+            display: block;
+        }
+
+        .copyright {
+            margin-top: 0.5rem;
+            text-align: center;
+            font-size: 14px;
+        }
+    </style> 
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#">Works</a>
+            <a href="#">Blog</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="main__block1">
+            <div class="main__block1-1">
+                <h1>Hi, I'm John,<br>Creative Technologist</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Placeat consequatur ducimus molestias,
+                    cum
+                    labore iure corrupti et ad reiciendis, deserunt delectus modi nesciunt. Molestias, nesciunt
+                    nisi.
+                </p>
+                <button class="myButton">Download Resume</button>
+            </div>
+
+            <div class="main__block1-2">
+                <img class="profile" src="./pics/man.png" alt="">
+            </div>
+        </div>
+
+        <div class="main__block2">
+            <div class="frame_block2">
+                <div class="headers">
+                    <div class="recent">Recent posts</div>
+                    <div class="view">View all</div>
+                </div>
+
+                <div class="frame_block2-1_block2-2">
+                    <div class="main__block2-1">
+                        <h1>Making a design system from scratch</h1>
+                        <h2>12 Feb 2020 &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; Design, Pattern</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit odio neque earum
+                            corrupti
+                            aut.
+                            Totam perferendis rem aspernatur dolores eos necessitatibus vel nulla, mollitia
+                            nihil a
+                            sapiente earum.</p>
+                    </div>
+
+                    <div class="main__block2-2">
+                            <h1>Creating pixel perfect icons in Figma</h1>
+                            <h2>12 Feb 2020 &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; Figma, Icon Design</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit odio neque earum
+                                corrupti aut.
+                                Totam perferendis rem aspernatur dolores eos necessitatibus vel nulla, mollitia
+                                nihil a
+                                sapiente earum.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="main__block3">
+            <div class="main__block3__content">
+                <div class="feature">Featured works</div>
+                <div class="main__block3__content__article1">
+                    <div class="main__block3__content__article1__pic">
+                        <img style="width: 200px;" src="./pics/work01.png" alt="">
+                    </div>
+                    <div class="main__block3__content__article1__text">
+                        <h1>Designing Dashboards</h1>
+                        <div class="year-tag">
+                            <div class="year">2020</div>
+                            <div class="tag">Dashboard</div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo adipisci quia
+                            exercitationem! Perferendis quos voluptates nisi dolores porro harum, magnam ab magni,
+                            molestiae unde pariatur soluta odio? Blanditiis, enim minus?</p>
+                    </div>
+                </div>
+                <div class="line"></div>
+
+                <div class="main__block3__content__article2">
+                    <div class="main__block3__content__article2__pic">
+                        <img style="width: 200px;" src="./pics/work02.png" alt="">
+                    </div>
+                    <div class="main__block3__content__article2__text">
+                        <h1>Vibrant Portraits of 2020</h1>
+                        <div class="year-tag">
+                            <div class="year">2018</div>
+                            <div class="tag">Illustration</div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo adipisci quia
+                            exercitationem! Perferendis quos voluptates nisi dolores porro harum, magnam ab magni,
+                            molestiae unde pariatur soluta odio? Blanditiis, enim minus?</p>
+                    </div>
+                </div>
+                <div class="line"></div>
+
+                <div class="main__block3__content__article3">
+                    <div class="main__block3__content__article3__pic">
+                        <img style="width: 200px;" src="./pics/work03.png" alt="">
+                    </div>
+                    <div class="main__block3__content__article3__text">
+                        <h1>36 Days of Malayalam type</h1>
+                        <div class="year-tag">
+                            <div class="year">2018</div>
+                            <div class="tag">Typography</div>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo adipisci quia
+                            exercitationem! Perferendis quos voluptates nisi dolores porro harum, magnam ab magni,
+                            molestiae unde pariatur soluta odio? Blanditiis, enim minus?</p>
+                    </div>
+                </div>
+                <div class="line"></div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="social">
+            <a href="https://www.facebook.com">
+                <img style="width: 30px;" src="./pics/facebook.svg" alt="">
+            </a>
+            <a href="https://www.instagram.com">
+                <img style="width: 30px;" src="./pics/instagram.svg" alt="">
+            </a>
+            <a href="https://www.twitter.com">
+                <img style="width: 30px;" src="./pics/twitter.svg" alt="">
+            </a>
+            <a href="https://www.linkedin.com">
+                <img style="width: 30px;" src="./pics/linkedin.svg" alt="">
+            </a>
+        </div>
+        <div class="copyright">Copyright &copy;2020 All Rights Reserved.</div>
+    </footer>
+</body>
+
+</html>

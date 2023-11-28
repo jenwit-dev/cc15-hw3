@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<title>Flex Shorthand</title>
+
+<head>
+  <style>
+    .main {
+      width: 300px;
+      height: 300px;
+      border: 1px solid black;
+      display: flex;
+    }
+
+
+    .original div {
+      flex: 1;
+
+      /* flex-grow: 0;  */
+      /* flex-grow: 1; */
+
+      /* flex-basis: 33%; */
+      /* flex-basis: 34%; */
+      /* flex-basis: 100%; */
+      /* flex-basis: 0%;  */
+      /* flex-basis: 0%; similar to flex-grow: 0; */
+  
+    }
+
+    .main2 {
+      /* width: 100px; */ /* DO NOT SPECIFY WIDTH */
+      height: 100px;
+      border: 1px solid black;
+      display: flex;
+      align-items: stretch;
+      justify-content: flex-start;
+      background-color: pink;
+    }
+
+
+    .sample div {
+      /* flex-grow: 1;
+      flex-shrink: 1;
+      flex-basis: 0%; */
+      /* color: white; */
+      background-color: aqua;
+
+      flex-grow: 1;
+      flex-basis: 200px;
+      flex-shrink: 1;
+      margin: 10px;
+      line-height: 30px;
+    }
+
+    .red {
+      flex-shrink: 0 !important;
+      color: yellow !important;
+    }
+
+
+    .flex-container>div {
+      background-color: DodgerBlue;
+      color: white;
+      width: 100px;
+      margin: 10px;
+      text-align: center;
+      line-height: 75px;
+      font-size: 30px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>The flex Property</h1>
+
+  <div class="main original">
+    <div style="background-color:coral;">RED</div>
+    <div style="background-color:lightblue;">BLUE</div>
+    <div style="background-color:lightgreen;">Green div with more content.</div>
+  </div>
+  <hr>
+  <div class="main2 sample">
+    <div class="red" style="background-color:coral;">RED</div>
+    <div style="background-color:lightblue;">BLUE</div>
+    <div style="background-color:lightgreen;">Green div with more content.</div>
+  </div>
+
+
+
+</body>
+
+</html>
